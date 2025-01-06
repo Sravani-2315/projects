@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Survey Form</title> 
+<meta charset="UTF-8"/> 
+<link rel="stylesheet" href="styles.css">
+<style>
+</style>
+</head>
+<body> 
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Student Registration form</p>
+  <form id="survey-form">
+    <fieldset>
+    <label for="name" id="name-label">Name:</label>
+      <input id="name" name="name" type="text" placeholder="Enter your name" required /> 
+      </fieldset>
+      <fieldset>
+      <label for="email" id="email-label">Email:</label>
+      <input id="email" name="email" type="email" placeholder="Enter your Email" required />
+      </fieldset>
+      <fieldset>
+      <label for="number" id="number-label">Phone Number:</label>
+      <input id="number" name="number" type="number" min="1" max="10"  placeholder="Enter your phone number" required /></fieldset>
+    <fieldset>
+    <legend>
+      What type of profession you want to choose?
+    </legend>
+    <label for="frontend-development"><input id="frontend-development" name="development" type="radio" class="inline"value="1" checked/>FRONTEND DEVELOPMENT</label>
+    <label for="backend-development"><input id="backend-development" name="development" type="radio" value="2"class="inline" />BACKEND DEVELOPMENT</label>
+    <label for="fullstack-development"><input id="fullstackend-development" name="development" type="radio" class="inline" value="3"/>FULL STACK DEVELOPMENT</label>
+    </fieldset>
+    <fieldset>
+      <label>How many years of experience?</label>
+      <select id="dropdown">
+      <option>Select an Option</option>
+      <option>0-1 years</option>
+      <option>1-2 years</option>
+      <option>3-4 years</option>
+      <option>5-6 years</option>
+      </label>
+    </select>
+    </fieldset>
+    <label>What are the skills you had?</label>
+    <fieldset>
+  <label><input type="checkbox" class="inline" value="1" />HTML</label>
+    <label><input type="checkbox" class="inline" value="2" />CSS</label>
+    <label><input type="checkbox" class="inline" value="3"/>JAVASCRIPT</label>
+    <label><input type="checkbox" class="inline" value="4"/>RESPONSIVE WEB DESIGN</label>
+    <label><input type="checkbox" class="inline" value="5"/>BOOTSTRAP</label>
+    <label><input type="checkbox" class="inline" value="6"/>CSS GRID SYSTEM</label>
+    </fieldset>
+    <label for="comments">Any Comments
+      <textarea id="comments"name="comments" rows="3" cols="30" placeholder="Enter Your Comment here..."></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit" />
+  </form>
+  </body>
