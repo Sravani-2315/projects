@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Responsive Navbar</title>
+  <style>
+  </style>
+  </head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="https://github.com/Sravani-2315/projects/blob/main/restaurantsite/d3a8dbc69eae473b9cb86f3c9e8c3c72-free.png?raw=true" alt="Description">
+
+    </div>
+    <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Catering</a></li>
+      <li><a href="#">Rewards</a></li>
+      <li><a href="#">Weekly Special</a></li>
+      <li><a href="#">Track Your Order</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    const menuIcon = document.querySelector('.mobile-menu-icon');
+    const navbarMenu = document.querySelector('.navbar ul');
+
+    function toggleMenu() {
+      navbarMenu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
