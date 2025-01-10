@@ -64,7 +64,10 @@
 }
 body {
   background-size: cover;
-  background: url('https://github.com/Sravani-2315/projects/blob/main/restaurantsite/Screenshot%202025-01-09%20at%205.31.51%20PM.png?raw=true') no-repeat center center/cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; 
+  background: url('https://images.pexels.com/photos/2802527/pexels-photo-2802527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
   margin: 0;
   padding: 0;
 }
@@ -80,14 +83,76 @@ body {
 
 .centered-image {
   position: absolute;
-  max-width: 35%; 
-  height: 35%;
+  max-width: 45%; 
+  height: 45%;
   border: 2px solid white;
   border-radius: 10px;
 }
 
+/* Menu Page */
+#menu {
+  padding: 50px 20px;
+  background: radial-gradient(#3C3F3F, #070808);
+  text-align: center;
+}
 
+#menu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
 
+#menu p {
+  margin-bottom: 40px;
+  color: white;
+}
+
+.menu-container {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px; 
+  padding: 20px;
+}
+
+.menu-card {
+  background: radial-gradient(#3C3F3F, #070808);
+  border: 1px solid white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-10px);
+}
+
+.menu-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.text-description {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px;
+}
+
+.item-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.item-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
 
 
     /* Responsive Styles */
@@ -151,11 +216,17 @@ body {
         margin: 10px 0;
       }
     }
+    .menu-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets and smaller devices in landscape mode */
+  }
 
     @media (min-width: 769px){
       .navbar li{
         font-size: 20px;
       }
+      .menu-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for devices with a width greater than 768px */
+  }
 
     }
     
