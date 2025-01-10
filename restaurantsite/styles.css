@@ -6,28 +6,37 @@
       box-sizing: border-box;
     }
 
-    body {
+    body, html {
       font-family: Arial, sans-serif;
     }
 
-    /* Navbar Styles */
+    /* Navbar */
     .navbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #333;
+      background: radial-gradient(#3C3F3F, #070808);
       color: #fff;
       padding: 10px 20px;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
     .navbar .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
+      width: 120px;
+    }
+
+    .navbar img{
+      width: 100%;
+      height: auto%;
     }
 
     .navbar ul {
       display: flex;
       gap: 15px;
+      flex-wrap: nowrap;
     }
 
     .navbar ul li a {
@@ -48,12 +57,41 @@
       cursor: pointer;
     }
 
-    .navbar ul {
-      flex-wrap: nowrap;
-    }
+    /* Main Page */
+    
+    body, html {
+  height: 100%;
+}
+body {
+  background-size: cover;
+  background: url('https://github.com/Sravani-2315/projects/blob/main/restaurantsite/Screenshot%202025-01-09%20at%205.31.51%20PM.png?raw=true') no-repeat center center/cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-image {
+  position: absolute;
+  max-width: 35%; 
+  height: 35%;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+
+
+
 
     /* Responsive Styles */
-    @media (max-width: 768px) {
+    @media (max-width: 480px){
       .mobile-menu-icon {
         display: block;
       }
@@ -78,3 +116,46 @@
         margin: 10px 0;
       }
     }
+
+    }
+@media (min-width: 481px) and (max-width: 768px) {
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: right;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+
+      }
+
+      .navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+
+      }
+
+      .navbar ul.show {
+        display: flex;
+      }
+
+      .navbar ul li {
+        text-align: center;
+        margin: 10px 0;
+      }
+    }
+
+    @media (min-width: 769px){
+      .navbar li{
+        font-size: 20px;
+      }
+
+    }
+    
