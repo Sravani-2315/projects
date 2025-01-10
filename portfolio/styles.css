@@ -68,7 +68,7 @@ body{
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;  
-  background-image: url("https://img.freepik.com/free-vector/neon-light-background_53876-67235.jpg?t=st=1736354282~exp=1736357882~hmac=c78cc07970033aa3d86205cbf4f6598e5dbd171bb72c798bc90a1b263d667c37&w=2000");
+  background-color: #82cfae;
   color: #b48274;
   display: flex; 
   flex-direction: column; 
