@@ -214,7 +214,7 @@ body {
 /* Popular Items */
 .popularitems-container {
     padding: 40px 20px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     background: radial-gradient(#3C3F3F, #070808);
 }
@@ -235,8 +235,9 @@ body {
 
 .populardish-cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive Grid */
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); 
+    row-gap: 1rem;
+    column-gap: 0.5rem;
     padding: 0;
 }
 
@@ -346,6 +347,13 @@ body {
       .menu-container {
     grid-template-columns: repeat(3, 1fr); 
   }
+  .populardish-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); 
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+    padding: 0;
+}
 
     }
     
