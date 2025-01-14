@@ -270,6 +270,34 @@ body {
     margin: 0;
 }
 
+/* Side Section*/
+
+.popularsmall-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.popularsmall-card h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+.popularsmall-card p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #666;
+}
+.popularsmall-card:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
     /* Responsive Styles */
     @media (max-width: 480px){
       .mobile-menu-icon {
