@@ -43,6 +43,9 @@
       padding: 5px 10px;
       transition: background-color 0.3s ease;
     }
+    .navbar ul li:last-child a {
+    margin-right: 20px;
+  }
 
     .navbar ul li a:hover {
       background-color: #555;
@@ -52,8 +55,15 @@
     /* Mobile Navbar */
     .mobile-menu-icon {
       display: none;
-      font-size: 1.5rem;
+      font-size: 2rem;
       cursor: pointer;
+      color: white;
+      background-color: transparent; 
+      padding: 10px;
+      z-index: 9999;
+      margin-right: 20px;
+      border: 2px solid white; 
+      border-radius: 10px;
     }
 
     /* Main Page */
@@ -402,4 +412,69 @@ iframe {
   font-size: 1.5rem;
 }
 
-    
+/*  Responsive Styles */
+@media (max-width: 767px) {
+    .navbar ul {
+        display: none; 
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px 10px;
+        z-index: 999;
+        text-align: center;
+        background: radial-gradient(#7E8787, #070808);
+        font-weight: bold;
+        font-size: 1.1rem;
+
+    }
+
+    .mobile-menu-icon {
+        display: block; 
+    }
+
+    .navbar ul.show {
+        display: flex; 
+    }
+}
+
+/* For Medium and Large Devices */
+@media (min-width: 768px) {
+    .navbar ul {
+        display: flex; 
+    }
+
+    .mobile-menu-icon {
+          display: none; 
+    }
+    .navbar ul li:last-child a {
+        margin-right: 20px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -276,11 +276,10 @@
 
 
   <script>
-    const menuIcon = document.querySelector('.mobile-menu-icon');
-    const navbarMenu = document.querySelector('.navbar ul');
-
     function toggleMenu() {
-      navbarMenu.classList.toggle('show');
+    const navbarMenu = document.querySelector('.navbar ul');
+    console.log('Hamburger icon clicked');  // Add this line
+    navbarMenu.classList.toggle('show');
     }
   </script>
 </body>
