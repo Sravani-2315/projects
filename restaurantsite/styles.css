@@ -26,12 +26,10 @@
     }
 
     .navbar .logo {
-      width: 120px;
+      width: 80px;
     }
-
-    .navbar img{
-      width: 100%;
-      height: auto%;
+    .navbar h1{
+      font-size: 2rem;
     }
 
     .navbar ul {
@@ -78,12 +76,14 @@ body {
   align-items: center;
 }
 
-.centered-image {
+.container h1 {
   position: absolute;
-  max-width: 45%; 
-  height: 45%;
-  border: 2px solid #ccc;
+  border: 5px solid #ccc;
   border-radius: 10px;
+  font-size: 6rem;
+  color: white;
+  margin-top: 180px;
+  margin-left: 20px;
 }
 
 /* Menu Page */
@@ -359,5 +359,47 @@ iframe {
   border-radius: 10px;
 }
 
+/* Contact Section */
+#contact {
+  padding: 50px 20px;
+  background: radial-gradient(#3C3F3F, #070808);
+  color: white;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-icon {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+.contact-icon:hover {
+  color: #1abc9c;
+}
+.contact-icon i {
+  font-size: 1.5rem;
+}
 
     
