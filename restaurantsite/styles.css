@@ -8,6 +8,7 @@
 
     body, html {
       font-family: Arial, sans-serif;
+      height: 100%;
     }
 
     /* Navbar */
@@ -58,10 +59,6 @@
     }
 
     /* Main Page */
-    
-    body, html {
-  height: 100%;
-}
 body {
   background-size: cover;
   background-repeat: no-repeat;
@@ -85,7 +82,7 @@ body {
   position: absolute;
   max-width: 45%; 
   height: 45%;
-  border: 2px solid white;
+  border: 2px solid #ccc;
   border-radius: 10px;
 }
 
@@ -116,7 +113,7 @@ body {
 
 .menu-card {
   background: radial-gradient(#3C3F3F, #070808);
-  border: 1px solid white;
+  border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -159,7 +156,6 @@ body {
 .catering-container {
     background: radial-gradient(#3C3F3F, #070808);
     background: cover;
-    max-width: 1200px;
     text-align: center;
     padding: 20px;
 }
@@ -211,177 +207,157 @@ body {
     font-weight: bold;
 }
 
-/* Popular Items */
-.popularitems-container {
-    padding: 40px 20px;
-    max-width: 1400px;
-    margin: 0 auto;
-    background: radial-gradient(#3C3F3F, #070808);
-}
-.popular-card {
-    background: white;
-    border-radius: 15px;
-    padding: 30px;
-    margin: 0 auto;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
+/*  Popular Items */
+#popular-items {
+  padding: 50px 20px;
+  background: radial-gradient(#3C3F3F, #070808);
+  text-align: center;
 }
 
-.popular-card h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 30px;
+#popular-items h2{
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: white;
 }
 
-.populardish-cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); 
-    row-gap: 1rem;
-    column-gap: 0.5rem;
-    padding: 0;
+.popular-items-container {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px; 
+  padding: 20px;
 }
 
-.populardish-card {
-    display: flex;
-    align-items: center;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    padding: 15px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.populardish-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.populardish-card img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-right: 15px;
-}
-
-.populardish-card h3 {
-    font-size: 1.2em;
-    color: #555;
-    margin: 0;
-}
-
-/* Side Section*/
-
-.popularsmall-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
+.popular-items-card {
+  background: radial-gradient(#7E8787, #070808);
+  display: flex; 
+  align-items: center;
+  border: 1px solid #ccc;
   border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 600px;
+}
+
+.popular-items-card:hover {
+  transform: translateY(-10px);
+}
+
+.popular-items-image {
+  width: 50%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.popular-items-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  text-align: left;
+}
+
+.popular-items-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+}
+
+/*  Weekly Specials Section */
+
+.specials-container {
+  margin: 0px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: radial-gradient(#3C3F3F, #070808);
+  background: cover;
 }
-.popularsmall-card h4 {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #333;
+
+.specials-heading {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: white;
 }
-.popularsmall-card p {
+
+.specials-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 8px;
+background: radial-gradient(#7E8787, #070808);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.specials-card {
+  flex-direction: row-reverse;
+}
+
+.specials-text {
+  flex: 1;
+  padding: 0px;
+}
+
+.specials-text h2 {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 2rem;
+}
+
+.specials-text ul {
+  color: white;
   font-size: 1rem;
-  margin: 5px 0;
-  color: #666;
-}
-.popularsmall-card:hover {
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transform: scale(1.02);
-  transition: all 0.3s ease-in-out;
+  line-height: 1.7;
 }
 
-    /* Responsive Styles */
-    @media (max-width: 480px){
-      .mobile-menu-icon {
-        display: block;
-      }
-
-      .navbar ul {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-      }
-
-      .navbar ul.show {
-        display: flex;
-      }
-
-      .navbar ul li {
-        text-align: center;
-        margin: 10px 0;
-      }
-    }
-
-    }
-@media (min-width: 481px) and (max-width: 768px) {
-      .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: right;
-        background-color: #333;
-        color: #fff;
-        padding: 10px 20px;
-
-      }
-
-      .navbar ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-
-      }
-
-      .navbar ul.show {
-        display: flex;
-      }
-
-      .navbar ul li {
-        text-align: center;
-        margin: 10px 0;
-      }
-    }
-    .menu-container {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-  .populardish-card {
-        width: 100%; 
-    }
-    .populardish-card {
-        width: calc(50% - 20px); 
-    }
-    @media (min-width: 769px){
-      .navbar li{
-        font-size: 20px;
-      }
-      .menu-container {
-    grid-template-columns: repeat(3, 1fr); 
-  }
-  .populardish-cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); 
-    row-gap: 1rem;
-    column-gap: 0.5rem;
-    padding: 0;
+.specials-image {
+  flex: 1.4;
+  text-align: center;
 }
 
-    }
+.specials-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/*  Map Section */
+#map-section {
+  padding: 50px 20px;
+  text-align: center;
+  background: radial-gradient(#3C3F3F, #070808);
+}
+
+#map-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: radial-gradient(#3C3F3F, #070808);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+
+
     
